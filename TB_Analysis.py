@@ -32,8 +32,7 @@ plt.plot(future_years, predictions, marker='x', linestyle='--', color='r', label
 plt.title('Annual TB Notifications in Nepal')
 plt.xlabel('Year')
 plt.ylabel('Number of New TB Cases')
-plt.ylim(min(nepal_data['c_newinc'].min(), predictions.min()) - 1000, 
-         max(nepal_data['c_newinc'].max(), predictions.max()) + 1000)
+plt.ylim(25000, 40000)  # Adjusted y-axis limits to better center the predictions
 plt.legend()
 plt.grid(True)
 plt.show()
